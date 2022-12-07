@@ -1,0 +1,140 @@
+.top{
+    height: 70px;
+    width: 101%;
+    margin-top: -8px;
+    margin-left:-8px;
+    background-image: url("../pic/homelineback2.png");
+    background-size: 100% 100%;
+    
+    
+}
+
+.top li{
+    
+    width:180px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(170, 48, 146);
+    font-family:"Lucida Console";
+    font-weight:bold;
+    font-size: 30px;
+    padding-top: 5px;
+   
+    
+}
+.top ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 20px;
+    
+    
+}
+.top>ul{
+    padding-left: 250px;
+}
+.top>ul>li{
+    float: left;
+   
+    
+}
+.top>ul>li:hover{
+    background-color:rgba(223, 108, 127, 0.6);
+   
+    
+}
+.top ul>li>ul{
+    transform: scaleY(0);
+    transform-origin: 0% 0;
+    transition: all 0.4s;
+    position: relative;
+    padding-top: 15px;
+    
+
+   
+}
+.top ul li:hover ul{
+    display: block;
+    transform: scaleY(1);
+    
+   
+}
+.top>ul>li>ul{
+    background-color: rgb(167, 48, 139,0.7);
+    
+}
+.top ul li ul li{
+    width:200px;
+    height: 35px;
+    text-align: center;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    font-family:"Lucida Console";
+    font-weight:bold;
+    font-size: 20px;
+    padding-top: 0px;
+}
+.top strong{
+    font-size: 50px;
+    font-weight: 500;
+}
+.top .e1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.top a{
+    color: rgb(215, 99, 182);
+}
+.top>ul>li>ul>li>a:hover{
+    background-color: rgba(132, 72, 117, 0.3);
+    color:black;
+}
+.top>ul>li>ul>li>a{
+    color: rgb(240, 198, 205);
+    font-family: "Lucida Calligraphy";
+}
+.top>ul>li>a:hover{
+    color: rgb(170, 48, 146);
+    background-color: rgba(132, 72, 117, 0.3);
+
+}
+.top ul .underline{
+    position: absolute;
+    bottom: 666px;
+    height: 1px;
+    left:790px;
+    width: 180px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(172, 42, 192,0.7);
+    transition: all 0.5s;
+    pointer-events: none;
+}
+.top ul .underline::before{
+    position: absolute;
+    content: "";
+    top: -7px;
+    left:calc(50% - 9px);
+    width: 18px;
+    height: 8px;
+    background-color: inherit;
+    clip-path: polygon(0 100%,50% 0,100% 100%);
+    
+}
+.top ul>li:nth-child(1):hover ~ .underline{
+    left:250px;
+    background-color: rgb(172, 42, 192,0.7);
+}
+.top ul>li:nth-child(2):hover ~ .underline{
+    left:430px;
+    background-color: rgb(172, 42, 192,0.7);
+}
+.top ul>li:nth-child(3):hover ~ .underline{
+    left:610px;
+    background-color: rgb(172, 42, 192,0.7);
+ }
+ .top ul>li:nth-child(4):hover ~ .underline{
+    left:790px;
+    background-color: rgb(172, 42, 192,0.7);
+ }
